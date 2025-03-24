@@ -34,7 +34,7 @@ resetBtn.addEventListener('click', () => {
   timerDisplay.classList.add('hidden'); // Nasconde il display
   endMessage.classList.add('hidden'); // Nasconde il messaggio finale
   timerDisplay.textContent = '00:00'; // Reimposta display
-  timerDisplay.style.color = 'white'; // Colore neutro
+  timerDisplay.style.color = 'lime'; // Colore neutro
   minutesInput.value = ''; // Svuota input
 });
 
