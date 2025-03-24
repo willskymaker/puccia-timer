@@ -51,3 +51,8 @@ button {
   margin-top: 20px;
   color: red;
 }
+
+#reset {
+  margin-left: 10px;
+  background-color: @f44336;
+}

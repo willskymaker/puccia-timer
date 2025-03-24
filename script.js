@@ -2,6 +2,7 @@ const startBtn = document.getElementById('start');
 const minutesInput = document.getElementById('minutes');
 const timerDisplay = document.getElementById('timer');
 const endMessage = document.getElementById('end-message');
+const resetBtn = document.getElementById('reset');
 
 let interval;
 
@@ -40,3 +41,11 @@ function updateDisplay(seconds) {
     timerDisplay.style.color = 'lime';
   }
 }
+resetBtn.addEventsListener('click', () => {
+    clearInterval(interval);
+    timerDisplay.classList.add('hidden');
+    endMessage.classList.add('hidden');
+    timerDisplay.textContent = '00:00';
+    timerDisplay.style.color = 'white';
+    minutesInput.value = '';
+});
