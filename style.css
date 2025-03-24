@@ -29,17 +29,27 @@ input {
 button {
   padding: 10px 20px;
   font-size: 1.2rem;
-  background-color: #0a84ff;
   border: none;
   color: white;
   cursor: pointer;
   border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#start {
+  background-color: #0a84ff;
+}
+
+#reset {
+  background-color: #f44336;
+  margin-left: 10px;
 }
 
 #timer {
   font-size: 6rem;
   margin-top: 40px;
   transition: color 0.3s;
+  color: lime;
 }
 
 .hidden {
@@ -52,7 +62,3 @@ button {
   color: red;
 }
 
-#reset {
-  margin-left: 10px;
-  background-color: @f44336;
-}
